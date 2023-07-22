@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style-form-details.css" />
+    <link rel="stylesheet" href="css/style-2.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="content-wrapper">
+
+            <a href="#" title="DoH-logo">
+                <img src="Images/DoH-logo.svg" alt="DoH-logo" />
+            </a>
+            <div class="d-flex">
+                <div class="dropdown head-drop">
+                    <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Hi, Rahul Abraham
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-item" type="button">Dashboard</a></li>
+                        <li><a href="#" class="dropdown-item" type="button">My Services</a></li>
+                        <li><button class="dropdown-item" type="button">My Task</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content-wrapper tabs">
+        <div class="tab-sticky">
+            <div class="tab">
+                <h2>Services</h2>
+                <button class="tablinks" onclick="openCity(event, 'one')" id="defaultOpen">
+                    <img src="Images/tab-icon-1.png" alt="" /> HR Services
+                </button>
+                <button class="tablinks" onclick="openCity(event, 'two')">
+                    <img src="Images/tab-icon-2.png" alt="" />IT Services
+                </button>
+                <button class="tablinks" onclick="openCity(event, 'three')">
+                    <img src="Images/tab-icon-3.png" alt="" />Procurment Services
+                </button>
+                <button class="tablinks" onclick="openCity(event, 'four')">
+                    <img src="Images/tab-icon-4.png" alt="" />General Services
+                </button>
+            </div>
+        </div>
+
+
+        <div class="tab__contentents">
+            <div id="one" class="tab__content">
+                <div class="tab__sticky tab__forms">
+                    <div class="tab__inside-header">
+                        <h2>Application for housing benefits new or renewal</h2>
+                        <div class="d-sm-flex mb-4">
+                            <div class="tab-head-info">
+                                DOH-RB-691627 <span class="doh-tag ms-4"
+                                    style="background-color: #0E7D19;">Closed</span>
+                            </div>
+                            <div class="tab-head-time ms-2">
+                                <div>
+                                    <p>Duration</p>
+                                    <div>
+                                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M7.49992 2.44565C7.67926 2.44565 7.826 2.29891 7.826 2.11956V1.95652C7.826 1.77717 7.67926 1.63043 7.49992 1.63043C7.32057 1.63043 7.17383 1.77717 7.17383 1.95652V2.11956C7.17383 2.29891 7.32057 2.44565 7.49992 2.44565Z"
+                                                fill="black" />
+                                            <path
+                                                d="M7.49992 12.5544C7.32057 12.5544 7.17383 12.7011 7.17383 12.8804V13.0435C7.17383 13.2228 7.32057 13.3696 7.49992 13.3696C7.67926 13.3696 7.826 13.2228 7.826 13.0435V12.8804C7.826 12.7011 7.67926 12.5544 7.49992 12.5544Z"
+                                                fill="black" />
+                                            <path
+                                                d="M2.11999 7.17392H1.95695C1.7776 7.17392 1.63086 7.32066 1.63086 7.50001C1.63086 7.67935 1.7776 7.82609 1.95695 7.82609H2.11999C2.29934 7.82609 2.44608 7.67935 2.44608 7.50001C2.44608 7.32066 2.29934 7.17392 2.11999 7.17392Z"
+                                                fill="black" />
+                                            <path
+                                                d="M13.0438 7.17392H12.8808C12.7014 7.17392 12.5547 7.32066 12.5547 7.50001C12.5547 7.67935 12.7014 7.82609 12.8808 7.82609H13.0438C13.2232 7.82609 13.3699 7.67935 13.3699 7.50001C13.3699 7.32066 13.2232 7.17392 13.0438 7.17392Z"
+                                                fill="black" />
+                                            <path
+                                                d="M3.81509 3.35869C3.68466 3.22826 3.489 3.22826 3.35857 3.35869C3.22813 3.48913 3.22813 3.68478 3.35857 3.81521L3.4727 3.92934C3.53792 3.99456 3.61944 4.02717 3.70096 4.02717C3.78248 4.02717 3.864 3.99456 3.92922 3.92934C4.05966 3.79891 4.05966 3.60326 3.92922 3.47282L3.81509 3.35869Z"
+                                                fill="black" />
+                                            <path
+                                                d="M3.4727 11.0707L3.35857 11.1848C3.22813 11.3152 3.22813 11.5109 3.35857 11.6413C3.42379 11.7065 3.50531 11.7391 3.58683 11.7391C3.66835 11.7391 3.74987 11.7065 3.81509 11.6413L3.92922 11.5272C4.05966 11.3968 4.05966 11.2011 3.92922 11.0707C3.79879 10.9402 3.60313 10.9402 3.4727 11.0707Z"
+                                                fill="black" />
+                                            <path
+                                                d="M11.1846 3.35869L11.0705 3.47282C10.94 3.60326 10.94 3.79891 11.0705 3.92934C11.1357 3.99456 11.2172 4.02717 11.2987 4.02717C11.3803 4.02717 11.4618 3.99456 11.527 3.92934L11.6411 3.81521C11.7716 3.68478 11.7716 3.48913 11.6411 3.35869C11.5107 3.22826 11.315 3.22826 11.1846 3.35869Z"
+                                                fill="black" />
+                                            <path
+                                                d="M7.826 7.36956V4.40217C7.826 4.22282 7.67926 4.07608 7.49992 4.07608C7.32057 4.07608 7.17383 4.22282 7.17383 4.40217V7.49999C7.17383 7.58152 7.20644 7.66304 7.27165 7.72825L10.8423 11.2989C10.9075 11.3641 10.989 11.3967 11.0706 11.3967C11.1521 11.3967 11.2336 11.3641 11.2988 11.2989C11.4293 11.1685 11.4293 10.9728 11.2988 10.8424L7.826 7.36956Z"
+                                                fill="black" />
+                                            <path
+                                                d="M7.5 0C3.3587 0 0 3.3587 0 7.5C0 11.6413 3.3587 15 7.5 15C11.6413 15 15 11.6413 15 7.5C15 3.3587 11.6413 0 7.5 0ZM7.5 14.3478C3.71739 14.3478 0.652174 11.2826 0.652174 7.5C0.652174 3.71739 3.71739 0.652174 7.5 0.652174C11.2826 0.652174 14.3478 3.71739 14.3478 7.5C14.3478 11.2826 11.2826 14.3478 7.5 14.3478Z"
+                                                fill="black" />
+                                        </svg>
+
+                                        5 Min
+                                    </div>
+                                </div>
+                                <div class="m-0">
+                                    <svg width="117" height="19" viewBox="0 0 117 19" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="6.5" cy="9.5" r="5.5" stroke="#237B85" stroke-width="2" />
+                                        <circle cx="107.5" cy="9.5" r="8.5" stroke="#237B85" stroke-width="2" />
+                                        <line x1="17" y1="9" x2="94" y2="9" stroke="#237B85" stroke-width="2"
+                                            stroke-dasharray="3 3" />
+                                    </svg>
+
+                                </div>
+                                <div>
+                                    <p>Actual Duration</p>
+                                    <div>
+                                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M7.49992 2.44565C7.67926 2.44565 7.826 2.29891 7.826 2.11956V1.95652C7.826 1.77717 7.67926 1.63043 7.49992 1.63043C7.32057 1.63043 7.17383 1.77717 7.17383 1.95652V2.11956C7.17383 2.29891 7.32057 2.44565 7.49992 2.44565Z"
+                                                fill="black" />
+                                            <path
+                                                d="M7.49992 12.5544C7.32057 12.5544 7.17383 12.7011 7.17383 12.8804V13.0435C7.17383 13.2228 7.32057 13.3696 7.49992 13.3696C7.67926 13.3696 7.826 13.2228 7.826 13.0435V12.8804C7.826 12.7011 7.67926 12.5544 7.49992 12.5544Z"
+                                                fill="black" />
+                                            <path
+                                                d="M2.11999 7.17392H1.95695C1.7776 7.17392 1.63086 7.32066 1.63086 7.50001C1.63086 7.67935 1.7776 7.82609 1.95695 7.82609H2.11999C2.29934 7.82609 2.44608 7.67935 2.44608 7.50001C2.44608 7.32066 2.29934 7.17392 2.11999 7.17392Z"
+                                                fill="black" />
+                                            <path
+                                                d="M13.0438 7.17392H12.8808C12.7014 7.17392 12.5547 7.32066 12.5547 7.50001C12.5547 7.67935 12.7014 7.82609 12.8808 7.82609H13.0438C13.2232 7.82609 13.3699 7.67935 13.3699 7.50001C13.3699 7.32066 13.2232 7.17392 13.0438 7.17392Z"
+                                                fill="black" />
+                                            <path
+                                                d="M3.81509 3.35869C3.68466 3.22826 3.489 3.22826 3.35857 3.35869C3.22813 3.48913 3.22813 3.68478 3.35857 3.81521L3.4727 3.92934C3.53792 3.99456 3.61944 4.02717 3.70096 4.02717C3.78248 4.02717 3.864 3.99456 3.92922 3.92934C4.05966 3.79891 4.05966 3.60326 3.92922 3.47282L3.81509 3.35869Z"
+                                                fill="black" />
+                                            <path
+                                                d="M3.4727 11.0707L3.35857 11.1848C3.22813 11.3152 3.22813 11.5109 3.35857 11.6413C3.42379 11.7065 3.50531 11.7391 3.58683 11.7391C3.66835 11.7391 3.74987 11.7065 3.81509 11.6413L3.92922 11.5272C4.05966 11.3968 4.05966 11.2011 3.92922 11.0707C3.79879 10.9402 3.60313 10.9402 3.4727 11.0707Z"
+                                                fill="black" />
+                                            <path
+                                                d="M11.1846 3.35869L11.0705 3.47282C10.94 3.60326 10.94 3.79891 11.0705 3.92934C11.1357 3.99456 11.2172 4.02717 11.2987 4.02717C11.3803 4.02717 11.4618 3.99456 11.527 3.92934L11.6411 3.81521C11.7716 3.68478 11.7716 3.48913 11.6411 3.35869C11.5107 3.22826 11.315 3.22826 11.1846 3.35869Z"
+                                                fill="black" />
+                                            <path
+                                                d="M7.826 7.36956V4.40217C7.826 4.22282 7.67926 4.07608 7.49992 4.07608C7.32057 4.07608 7.17383 4.22282 7.17383 4.40217V7.49999C7.17383 7.58152 7.20644 7.66304 7.27165 7.72825L10.8423 11.2989C10.9075 11.3641 10.989 11.3967 11.0706 11.3967C11.1521 11.3967 11.2336 11.3641 11.2988 11.2989C11.4293 11.1685 11.4293 10.9728 11.2988 10.8424L7.826 7.36956Z"
+                                                fill="black" />
+                                            <path
+                                                d="M7.5 0C3.3587 0 0 3.3587 0 7.5C0 11.6413 3.3587 15 7.5 15C11.6413 15 15 11.6413 15 7.5C15 3.3587 11.6413 0 7.5 0ZM7.5 14.3478C3.71739 14.3478 0.652174 11.2826 0.652174 7.5C0.652174 3.71739 3.71739 0.652174 7.5 0.652174C11.2826 0.652174 14.3478 3.71739 14.3478 7.5C14.3478 11.2826 11.2826 14.3478 7.5 14.3478Z"
+                                                fill="black" />
+                                        </svg>
+
+                                        10 Min
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <nav class="tab-nav">
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                                aria-selected="true">
+                                Personal Information <br> المعلومات الشخصية
+                            </button>
+                            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
+                                aria-selected="false">
+                                Passport Information <br> معلومات جواز السف
+                            </button>
+                            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact"
+                                aria-selected="false">
+                                Residential address <br>عنوان السكن
+                            </button>
+                            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-delivery" type="button" role="tab" aria-controls="nav-contact"
+                                aria-selected="false">
+                                Delivery Information <br>معلومات التوصيل
+                            </button>
+                            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-attach" type="button" role="tab" aria-controls="nav-contact"
+                                aria-selected="false">
+                                Attachments <br> المرفقات
+                            </button>
+                        </div>
+                    </nav>
+                </div>
+                <div class="tab-content pt-4 pb-4 tab-application" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
+                        tabindex="0">
+
+                        <div class="flex">
+                            <div class="doh-input mb-3">
+                                <p class="doh-input__head">
+                                    UAE Unified No / الرقم الموحد الاماراتي <span>*</span>
+                                </p>
+                                <div class="doh-input__wrapper">
+                                    12234567
+                                </div>
+                            </div>
+                            <div class="doh-input mb-3">
+                                <p class="doh-input__head">
+                                    Full Name (English) <span>*</span>
+                                </p>
+                                <div class="doh-input__wrapper">
+                                    Rahu Abraham
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="doh-input mb-3">
+                                <p class="doh-input__head">
+                                    Full Name (Arabic)<span>*</span>
+                                </p>
+                                <div class="doh-input__wrapper">
+                                    Rahu Abraham
+                                </div>
+                            </div>
+                            <div class="doh-input mb-3">
+                                <p class="doh-input__head">
+                                    Current Nationality <span>*</span>
+                                </p>
+                                <div class="doh-input__wrapper">
+                                    Indian
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex">
+                            <div class="doh-input mb-3">
+                                <p class="doh-input__head">
+                                    Previous Nationality<span>*</span>
+                                </p>
+                                <div class="doh-input__wrapper">
+                                    Indian
+                                </div>
+                            </div>
+                            <div class="doh-input mb-3">
+                                <p class="doh-input__head">Gender <span>*</span></p>
+                                <div class="doh-input__wrapper">
+                                    Male
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex">
+                            <div class="doh-input mb-3">
+                                <p class="doh-input__head">Date Of Birth<span>*</span></p>
+                                <div class="doh-input__wrapper">
+                                    16-04-1990
+                                </div>
+                            </div>
+                            <div class="doh-input mb-3">
+                                <p class="doh-input__head">Birth Country<span>*</span></p>
+                                <div class="doh-input__wrapper">
+                                    India
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex">
+                            <div class="doh-input mb-3">
+                                <p class="doh-input__head">Marital Status<span>*</span></p>
+                                <div class="doh-input__wrapper">
+                                    Married
+                                </div>
+                            </div>
+                            <div class="doh-input mb-3">
+                                <p class="doh-input__head">Birth Country<span>*</span></p>
+                                <div class="doh-input__wrapper">
+                                    India
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex">
+                            <div class="doh-input mb-3">
+                                <p class="doh-input__head">
+                                    Place Of Birth (English)<span>*</span>
+                                </p>
+                                <div class="doh-input__wrapper">
+                                    Idukki
+                                </div>
+                            </div>
+                            <div class="doh-input mb-3">
+                                <p class="doh-input__head">
+                                    Place Of Birth (Arabic)<span>*</span>
+                                </p>
+                                <div class="doh-input__wrapper">
+                                    Idukki
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex">
+                            <div class="doh-input mb-3">
+                                <p class="doh-input__head">
+                                    Mother Name (English) <span>*</span>
+                                </p>
+                                <div class="doh-input__wrapper">
+                                    Mary
+                                </div>
+                            </div>
+                            <div class="doh-input mb-3">
+                                <p class="doh-input__head">
+                                    Mother Name (Arabic)<span>*</span>
+                                </p>
+                                <div class="doh-input__wrapper">
+                                    Mary
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex">
+                            <div class="doh-input mb-3">
+                                <p class="doh-input__head">Religion<span>*</span></p>
+                                <div class="doh-input__wrapper">
+                                    Christian
+                                </div>
+                            </div>
+                            <div class="doh-input mb-3">
+                                <p class="doh-input__head">Faith<span>*</span></p>
+                                <div class="doh-input__wrapper">
+                                    Christian
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex">
+                            <div class="doh-input mb-3">
+                                <p class="doh-input__head">Qualification<span>*</span></p>
+                                <div class="doh-input__wrapper">
+                                    Bcom
+                                </div>
+                            </div>
+                            <div class="doh-input mb-3">
+                                <p class="doh-input__head">Professions<span>*</span></p>
+                                <div class="doh-input__wrapper">
+                                    IT
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex">
+                            <div class="doh-input mb-3">
+                                <p class="doh-input__head">Visit Reason<span>*</span></p>
+                                <div class="doh-input__wrapper">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae error aut architecto
+                                    quaerat aliquid?
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"
+                        tabindex="0">
+                        <div class="flex">
+                            <div class="doh-input mb-3">
+                                <p class="doh-input__head">Passport Type<span>*</span></p>
+                                <div class="doh-input__wrapper">
+                                    Lorem ipsum dolor sit amet.
+                                </div>
+                            </div>
+                            <div class="doh-input mb-3">
+                                <p class="doh-input__head">Passport No<span>*</span></p>
+                                <div class="doh-input__wrapper">
+                                    9597679889870909
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="doh-input mb-3">
+                                <p class="doh-input__head">Passport Issue Date<span>*</span></p>
+                                <div class="doh-input__wrapper">
+                                    14-05-2000
+                                </div>
+                            </div>
+                            <div class="doh-input mb-3">
+                                <p class="doh-input__head">Passport Expire Date<span>*</span></p>
+                                <div class="doh-input__wrapper">
+                                    12-02-2030
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="flex">
+                            <div class="doh-input mb-3">
+                                <p class="doh-input__head">Passport Issue Place (English) <span>*</span></p>
+                                <div class="doh-input__wrapper">
+                                    Idukki
+                                </div>
+                            </div>
+                            <div class="doh-input mb-3">
+                                <p class="doh-input__head">Passport Issue Place (Arabic) <span>*</span></p>
+                                <div class="doh-input__wrapper">
+                                    Idukki
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex">
+                            <div class="doh-input mb-3">
+                                <p class="doh-input__head">Passport Issue Country <span>*</span></p>
+                                <div class="doh-input__wrapper">
+                                    India
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab"
+                        tabindex="0">
+                        <div class="flex">
+                            <div class="doh-input mb-3">
+                                <p class="doh-input__head">Current Location<span>*</span></p>
+                                <div class="doh-input__wrapper">
+                                    Outside UAE
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- inside -->
+                        <div class="inside active">
+                            <h2 style="font-size: 20px; font-weight: 600; color: #1c8b97;" class="mb-3 mt-3">Inside UAE
+                            </h2>
+                            <div class="flex">
+                                <div class="doh-input mb-3">
+                                    <p class="doh-input__head">Permanent Country <span>*</span></p>
+                                    <div class="doh-input__wrapper">
+                                        India
+                                    </div>
+                                </div>
+                                <div class="doh-input mb-3">
+                                    <p class="doh-input__head">Permanent Mobile Number<span>*</span></p>
+                                    <div class="doh-input__wrapper">
+                                        87643546465
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex">
+
+                                <div class="doh-input mb-3">
+                                    <p class="doh-input__head">Detailed Address Outside UAE <span>*</span></p>
+                                    <div class="doh-input__wrapper">
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus quod quas
+                                        similique incidunt magni dolore.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Outside -->
+                        <div class="outside active">
+                            <h2 style="font-size: 20px; font-weight: 600; color: #1c8b97;" class="mb-3 mt-3">Outside UAE
+                            </h2>
+                            <div class="flex">
+                                <div class="doh-input mb-3">
+                                    <p class="doh-input__head">Current Location<span>*</span></p>
+                                    <div class="doh-input__wrapper">
+                                        India
+                                    </div>
+                                </div>
+                                <div class="doh-input mb-3">
+                                    <p class="doh-input__head">Current Location<span>*</span></p>
+                                    <div class="doh-input__wrapper">
+                                        India
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex">
+                                <div class="doh-input mb-3">
+                                    <p class="doh-input__head">Area<span>*</span></p>
+                                    <div class="doh-input__wrapper">
+                                        Idukki
+                                    </div>
+                                </div>
+                                <div class="doh-input mb-3">
+                                    <p class="doh-input__head">Detailed Address<span>*</span></p>
+                                    <div class="doh-input__wrapper">
+                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum ad voluptas
+                                        accusantium fugit obcaecati?
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex">
+                                <div class="doh-input mb-3">
+                                    <p class="doh-input__head">Building / Hotel<span>*</span></p>
+                                    <div class="doh-input__wrapper">
+                                        Buliding one
+                                    </div>
+                                </div>
+                                <div class="doh-input mb-3">
+                                    <p class="doh-input__head">Local Flat Number<span>*</span></p>
+                                    <div class="doh-input__wrapper">
+                                        125
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="flex">
+                                <div class="doh-input mb-3 w-100 pe-3">
+                                    <p class="doh-input__head">UAE Mobile Number<span>*</span></p>
+                                    <div class="doh-input__wrapper">
+                                        6857646463
+                                    </div>
+                                </div>
+                                <div class="doh-input mb-3">
+                                    <p class="doh-input__head">Residence Tel<span>*</span></p>
+                                    <div class="doh-input__wrapper">
+                                        674646462
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="doh-input mb-3 w-100 pe-3">
+                                    <p class="doh-input__head">Email<span>*</span></p>
+                                    <div class="doh-input__wrapper">
+                                        testemail@gmail.com
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="tab-pane fade" id="nav-delivery" role="tabpanel" aria-labelledby="nav-contact-tab"
+                        tabindex="0">
+
+                        <div class="flex">
+                            <div class="doh-input mb-3">
+                                <p class="doh-input__head">Delivery Emirates<span>*</span></p>
+                                <div class="doh-input__wrapper">
+                                    Emirate 1
+                                </div>
+                            </div>
+                            <div class="doh-input mb-3">
+                                <p class="doh-input__head">Delivery Area<span>*</span></p>
+                                <div class="doh-input__wrapper">
+                                    Idukki
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="flex">
+                            <div class="doh-input mb-3">
+                                <p class="doh-input__head">Land Mark<span>*</span></p>
+                                <div class="doh-input__wrapper">
+                                    Lorem ipsum dolor sit amet.
+                                </div>
+                            </div>
+                            <div class="doh-input mb-3">
+                                <p class="doh-input__head">Delivery Address Details<span>*</span></p>
+                                <div class="doh-input__wrapper">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem illum nihil
+                                    beatae eveniet quod!
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="flex">
+                            <div class="doh-input mb-3">
+                                <p class="doh-input__head">UAE Mobile Number<span>*</span></p>
+                                <div class="doh-input__wrapper">
+                                    8786465465465
+                                </div>
+                            </div>
+                            <div class="doh-input mb-3">
+                                <p class="doh-input__head">Second Mobile Number<span>*</span></p>
+                                <div class="doh-input__wrapper">
+                                    6876844354563
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="tab-pane fade" id="nav-attach" role="tabpanel" aria-labelledby="nav-contact-tab"
+                        tabindex="0">
+                        <div class="flex">
+                            <div class="doh-input mb-3">
+                                <p class="doh-input__head">A copy of the result of the medical examination / <br> نسخة
+                                    عن نتيجة الفحص الطبي<span>*</span></p>
+                                <div class="doh-input__wrapper">
+                                    <button class="file-bownload">
+                                        <span>
+                                            <svg width="9" height="10" viewBox="0 0 9 10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M0 8.94737H9V10H0V8.94737ZM5 5.88L8.0355 2.68421L8.7425 3.42842L4.5 7.89474L0.2575 3.42895L0.9645 2.68421L4 5.87895V0H5V5.88Z"
+                                                    fill="#1961A4"></path>
+                                            </svg>
+                                            Download
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="doh-input mb-3">
+                                <p class="doh-input__head">Salary certificate /  شهادة الراتب<span>*</span><br><br></p>
+                                <div class="doh-input__wrapper">
+                                    <button class="file-bownload">
+                                        <span>
+                                            <svg width="9" height="10" viewBox="0 0 9 10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M0 8.94737H9V10H0V8.94737ZM5 5.88L8.0355 2.68421L8.7425 3.42842L4.5 7.89474L0.2575 3.42895L0.9645 2.68421L4 5.87895V0H5V5.88Z"
+                                                    fill="#1961A4"></path>
+                                            </svg>
+                                            Download
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="doh-input mb-3">
+                                <p class="doh-input__head">A copy of the passport of the beneficiary of the service /
+                                    <br> نسخة عن جواز السفر للمستفيد من الخدمة<span>*</span>
+                                </p>
+                                <div class="doh-input__wrapper">
+                                    <button class="file-bownload">
+                                        <span>
+                                            <svg width="9" height="10" viewBox="0 0 9 10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M0 8.94737H9V10H0V8.94737ZM5 5.88L8.0355 2.68421L8.7425 3.42842L4.5 7.89474L0.2575 3.42895L0.9645 2.68421L4 5.87895V0H5V5.88Z"
+                                                    fill="#1961A4"></path>
+                                            </svg>
+                                            Download
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="doh-input mb-3">
+                                <p class="doh-input__head">Original Entry Permit /  اذن الدخول الأصلي <span>*</span>
+                                    <br> <br>
+                                </p>
+                                <div class="doh-input__wrapper">
+                                    <button class="file-bownload">
+                                        <span>
+                                            <svg width="9" height="10" viewBox="0 0 9 10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M0 8.94737H9V10H0V8.94737ZM5 5.88L8.0355 2.68421L8.7425 3.42842L4.5 7.89474L0.2575 3.42895L0.9645 2.68421L4 5.87895V0H5V5.88Z"
+                                                    fill="#1961A4"></path>
+                                            </svg>
+                                            Download
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="doh-input mb-3">
+                                <p class="doh-input__head">A copy of the health insurance / <br> صورة عن التأمين
+                                    الصحي <span>*</span><br><br><br></p>
+                                <div class="doh-input__wrapper">
+                                    <button class="file-bownload">
+                                        <span>
+                                            <svg width="9" height="10" viewBox="0 0 9 10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M0 8.94737H9V10H0V8.94737ZM5 5.88L8.0355 2.68421L8.7425 3.42842L4.5 7.89474L0.2575 3.42895L0.9645 2.68421L4 5.87895V0H5V5.88Z"
+                                                    fill="#1961A4"></path>
+                                            </svg>
+                                            Download
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="doh-input mb-3">
+                                <p class="doh-input__head">Colored personal photo
+                                    (Please attach a recent photo as per the required specifications 35x40 white
+                                    background, PDF) / <br> صورة شخصية ملونة (يرجى ارفاق صورة حديثة حسب المواصفات
+                                    المطلوبة 35x40 خلفية ابيض , PDF<span>*</span></p>
+                                <div class="doh-input__wrapper">
+                                    <button class="file-bownload">
+                                        <span>
+                                            <svg width="9" height="10" viewBox="0 0 9 10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M0 8.94737H9V10H0V8.94737ZM5 5.88L8.0355 2.68421L8.7425 3.42842L4.5 7.89474L0.2575 3.42895L0.9645 2.68421L4 5.87895V0H5V5.88Z"
+                                                    fill="#1961A4"></path>
+                                            </svg>
+                                            Download
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="doh-input mb-3">
+                                <p class="doh-input__head">Support Documents / وثائق دعم<span>*</span></p>
+                                <div class="doh-input__wrapper">
+                                    <button class="file-bownload">
+                                        <span>
+                                            <svg width="9" height="10" viewBox="0 0 9 10" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M0 8.94737H9V10H0V8.94737ZM5 5.88L8.0355 2.68421L8.7425 3.42842L4.5 7.89474L0.2575 3.42895L0.9645 2.68421L4 5.87895V0H5V5.88Z"
+                                                    fill="#1961A4"></path>
+                                            </svg>
+                                            Download
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="w-100 mt-3 take-action">
+                    <p class="doh-input__head" style="font-size:18px ;">Take Action on this application</p>
+                    <div class="w-100 d-flex align-items-center">
+                        <div class="w-100 pe-3 d-flex">
+                            <div class="w-100 d-flex align-items-center" style="max-width: 300px;">
+                                <div class="d-flex align-items-center me-4">
+                                    <label class="switch me-3" for="approve">
+                                        <input type="radio" id="approve" name="radio">
+                                        <span class="slider round"></span>
+                                    </label>
+                                    Approve
+                                </div>
+                                <div class="d-flex align-items-center me-4">
+                                    <label class="switch me-3" for="diapprove">
+                                        <input type="radio" id="diapprove" name="radio">
+                                        <span class="slider round"></span>
+
+                                    </label>
+                                    Reject
+                                </div>
+
+                            </div>
+                            <div class="doh-input mb-0 ms-3">
+                                <div class="doh-input__wrapper">
+                                    <textarea class="doh-input__input" name="" id="" cols="30" rows="10"
+                                        placeholder="Type your comments here"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="primary-btn" style="width: 200px;">Submit</a>
+                    </div>
+                </div>
+
+
+                <div class="accordion accordion-flush mt-5 doh-accordion" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                <span class="doh-tag me-3" style="background-color: #0E7D19;">Approved</span>
+                                <span>DOH-RB-691627</span>
+                                <svg width="6" height="6" viewBox="0 0 6 6" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="3" cy="3" r="3" fill="#949494" />
+                                </svg>
+                                Service Requester
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body ">
+                                <h3 class="mb-5 mt-2">Service Request Information</h3>
+                                <div class="flex">
+                                    <div class="doh-input mb-3">
+                                        <p class="doh-input__head">
+                                            Affected User
+                                        </p>
+                                        <div class="doh-input__wrapper">
+                                            Alternate Contact Menthod
+                                        </div>
+                                    </div>
+                                    <div class="doh-input mb-3">
+                                        <p class="doh-input__head">
+                                            Alternate Contact Menthod
+                                        </p>
+                                        <div class="doh-input__wrapper">
+                                            I Agree
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex">
+
+                                    <div class="doh-input mb-3">
+                                        <p class="doh-input__head">
+                                            Title (Required)
+                                        </p>
+                                        <div class="doh-input__wrapper">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex">
+
+                                    <div class="doh-input mb-3">
+                                        <p class="doh-input__head">
+                                            Description
+                                        </p>
+                                        <div class="doh-input__wrapper">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the
+                                            1500s, when an unknown printer took a galley of type and scrambled it to
+                                            make a type specimen book. It has survived not only five centuries,
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="doh-input mb-3">
+                                        <p class="doh-input__head">
+                                            Stage
+                                        </p>
+                                        <div class="doh-input__wrapper">
+                                            Approve
+                                        </div>
+                                    </div>
+                                    <div class="doh-input mb-3">
+                                        <p class="doh-input__head">&nbsp;</p>
+                                        <div class="d-flex mt-2 align-items-center">
+                                            <label class="switch me-3 " for="Line">
+                                                <input type="checkbox" id="Line">
+                                                <span class="slider round"></span>
+                                            </label>
+                                            Line Manager Should Approve
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="flex">
+                                    <div class="doh-input mb-3">
+                                        <p class="doh-input__head">
+                                            Approval Condition
+                                        </p>
+                                        <div class="doh-input__wrapper">
+                                            Unanimous
+                                        </div>
+                                    </div>
+                                    <div class="doh-input mb-3">
+                                        <p class="doh-input__head">
+                                            Approva Threshold (%)
+                                        </p>
+                                        <div class="doh-input__wrapper">
+                                            100
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="flex">
+                                    <div class="doh-input mb-3">
+                                        <p class="doh-input__head">
+                                            Approved Date
+                                        </p>
+                                        <div class="doh-input__wrapper">
+                                            22-12-2022
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                Accordion Item #2
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion
+                                body. Let's imagine this being filled with some actual content.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                Accordion Item #3
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                                demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion
+                                body. Nothing more exciting happening here in terms of content, but just filling up the
+                                space to make it look, at least at first glance, a bit more representative of how this
+                                would look in a real-world application.</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="content-wrapper">
+            <ul>
+                <li><a href="#" title="Privacy Policy">Privacy Policy</a></li>
+                <li>|</li>
+                <li><a href="#" title="Privacy Policy">Terms & Conditions</a></li>
+            </ul>
+            <p>© 2022 Copyrights DoH. All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!--  -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab__content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+        document.getElementById("defaultOpen1").click();
+    </script>
+
+    <script>
+        if ($("div").hasClass("tab__contentents") === true) {
+            $("body").addClass("footer-padding");
+        }
+    </script>
+
+    <script>
+        $("#location").change(function () {
+            if ($(this).val() == "1") {
+                $('.inside').addClass('active');
+            } else {
+                $('.inside').removeClass('active');
+            }
+        });
+
+        $("#location").change(function () {
+            if ($(this).val() == "2") {
+                $('.outside').addClass('active');
+            } else {
+                $('.outside').removeClass('active');
+            }
+        });
+
+    </script>
+</body>
+
+</html>

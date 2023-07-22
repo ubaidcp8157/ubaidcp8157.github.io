@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/my-request.css" />
+    <style>
+        .navbar,
+        .dashboard-view,
+        .footer {
+            padding-left: 30px;
+            padding-right: 30px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="" style="
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        ">
+            <p>Support Service Sector</p>
+            <a href="#" title="DoH-logo">
+                <img src="Images/DoH-logo.svg" alt="DoH-logo" />
+            </a>
+        </div>
+    </nav>
+
+    <div class="dashboard-view">
+        <div class="dashboard-view__bg">
+            <h1 class="dashboard-view__title">My Request</h1>
+            <div class="dashboard-view__container">
+                <h2 class="dashboard-view__box-title w-100">
+                    Service Request Status
+                </h2>
+                <div class="dashboard-view__box">
+                    <div class="dashboard-view__box-item" style="background-color: #f5e7ff">
+                        <div class="dashboard-view__icon" style="background-color: #be7aee">
+                            <svg width="19" height="21" viewBox="0 0 19 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_107_687)">
+                                    <path
+                                        d="M12.0018 0.878845H7.83521C7.37696 0.878845 7.00171 1.25409 7.00171 1.7121V3.7956C7.00171 4.25361 7.37696 4.62885 7.83521 4.62885H12.0018C12.46 4.62885 12.8352 4.25361 12.8352 3.7956V1.7121C12.8352 1.25409 12.46 0.878845 12.0018 0.878845Z"
+                                        fill="white" />
+                                    <path
+                                        d="M16.5852 2.54559H14.0852V4.21209C14.0852 5.1286 13.3348 5.87884 12.4185 5.87884H7.41846C6.5022 5.87884 5.75171 5.1286 5.75171 4.21209V2.54559H3.25171C2.33545 2.54559 1.58521 3.29583 1.58521 4.21209V19.2121C1.58521 20.1286 2.33545 20.8788 3.25171 20.8788H16.5852C17.5015 20.8788 18.2518 20.1286 18.2518 19.2121V4.21209C18.2518 3.29583 17.5015 2.54559 16.5852 2.54559ZM4.91846 9.21209H9.91846V10.8788H4.91846V9.21209ZM13.2518 17.5455H4.91846V15.8788H13.2518V17.5455ZM14.9185 14.2121H4.91846V12.5455H14.9185V14.2121Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_107_687">
+                                        <rect width="18" height="20" fill="white"
+                                            transform="translate(0.918457 0.878845)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="dashboard-view__no">
+                            <span>15</span>
+                            <div class="progress-wrapper">
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 25%"></div>
+                                </div>
+                                <div class="progress-bar-no">25%</div>
+                            </div>
+                        </div>
+                        <p class="dashboard-view__text">Total</p>
+                    </div>
+
+                    <div class="dashboard-view__box-item" style="background-color: #fff4de">
+                        <div class="dashboard-view__icon" style="background-color: #fba627">
+                            <svg width="19" height="21" viewBox="0 0 19 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_107_687)">
+                                    <path
+                                        d="M12.0018 0.878845H7.83521C7.37696 0.878845 7.00171 1.25409 7.00171 1.7121V3.7956C7.00171 4.25361 7.37696 4.62885 7.83521 4.62885H12.0018C12.46 4.62885 12.8352 4.25361 12.8352 3.7956V1.7121C12.8352 1.25409 12.46 0.878845 12.0018 0.878845Z"
+                                        fill="white" />
+                                    <path
+                                        d="M16.5852 2.54559H14.0852V4.21209C14.0852 5.1286 13.3348 5.87884 12.4185 5.87884H7.41846C6.5022 5.87884 5.75171 5.1286 5.75171 4.21209V2.54559H3.25171C2.33545 2.54559 1.58521 3.29583 1.58521 4.21209V19.2121C1.58521 20.1286 2.33545 20.8788 3.25171 20.8788H16.5852C17.5015 20.8788 18.2518 20.1286 18.2518 19.2121V4.21209C18.2518 3.29583 17.5015 2.54559 16.5852 2.54559ZM4.91846 9.21209H9.91846V10.8788H4.91846V9.21209ZM13.2518 17.5455H4.91846V15.8788H13.2518V17.5455ZM14.9185 14.2121H4.91846V12.5455H14.9185V14.2121Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_107_687">
+                                        <rect width="18" height="20" fill="white"
+                                            transform="translate(0.918457 0.878845)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="dashboard-view__no">
+                            <span>15</span>
+                            <div class="progress-wrapper">
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 25%"></div>
+                                </div>
+                                <div class="progress-bar-no">25%</div>
+                            </div>
+                        </div>
+                        <p class="dashboard-view__text">In Progress</p>
+                    </div>
+
+                    <div class="dashboard-view__box-item" style="background-color: #defbe9">
+                        <div class="dashboard-view__icon" style="background-color: #46af58">
+                            <svg width="19" height="21" viewBox="0 0 19 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_107_687)">
+                                    <path
+                                        d="M12.0018 0.878845H7.83521C7.37696 0.878845 7.00171 1.25409 7.00171 1.7121V3.7956C7.00171 4.25361 7.37696 4.62885 7.83521 4.62885H12.0018C12.46 4.62885 12.8352 4.25361 12.8352 3.7956V1.7121C12.8352 1.25409 12.46 0.878845 12.0018 0.878845Z"
+                                        fill="white" />
+                                    <path
+                                        d="M16.5852 2.54559H14.0852V4.21209C14.0852 5.1286 13.3348 5.87884 12.4185 5.87884H7.41846C6.5022 5.87884 5.75171 5.1286 5.75171 4.21209V2.54559H3.25171C2.33545 2.54559 1.58521 3.29583 1.58521 4.21209V19.2121C1.58521 20.1286 2.33545 20.8788 3.25171 20.8788H16.5852C17.5015 20.8788 18.2518 20.1286 18.2518 19.2121V4.21209C18.2518 3.29583 17.5015 2.54559 16.5852 2.54559ZM4.91846 9.21209H9.91846V10.8788H4.91846V9.21209ZM13.2518 17.5455H4.91846V15.8788H13.2518V17.5455ZM14.9185 14.2121H4.91846V12.5455H14.9185V14.2121Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_107_687">
+                                        <rect width="18" height="20" fill="white"
+                                            transform="translate(0.918457 0.878845)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="dashboard-view__no">
+                            <span>15</span>
+                            <div class="progress-wrapper">
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 25%"></div>
+                                </div>
+                                <div class="progress-bar-no">25%</div>
+                            </div>
+                        </div>
+                        <p class="dashboard-view__text">Total</p>
+                    </div>
+
+                    <div class="dashboard-view__box-item" style="background-color: #ffe2e6">
+                        <div class="dashboard-view__icon" style="background-color: #fa5a7d">
+                            <svg width="19" height="21" viewBox="0 0 19 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_107_687)">
+                                    <path
+                                        d="M12.0018 0.878845H7.83521C7.37696 0.878845 7.00171 1.25409 7.00171 1.7121V3.7956C7.00171 4.25361 7.37696 4.62885 7.83521 4.62885H12.0018C12.46 4.62885 12.8352 4.25361 12.8352 3.7956V1.7121C12.8352 1.25409 12.46 0.878845 12.0018 0.878845Z"
+                                        fill="white" />
+                                    <path
+                                        d="M16.5852 2.54559H14.0852V4.21209C14.0852 5.1286 13.3348 5.87884 12.4185 5.87884H7.41846C6.5022 5.87884 5.75171 5.1286 5.75171 4.21209V2.54559H3.25171C2.33545 2.54559 1.58521 3.29583 1.58521 4.21209V19.2121C1.58521 20.1286 2.33545 20.8788 3.25171 20.8788H16.5852C17.5015 20.8788 18.2518 20.1286 18.2518 19.2121V4.21209C18.2518 3.29583 17.5015 2.54559 16.5852 2.54559ZM4.91846 9.21209H9.91846V10.8788H4.91846V9.21209ZM13.2518 17.5455H4.91846V15.8788H13.2518V17.5455ZM14.9185 14.2121H4.91846V12.5455H14.9185V14.2121Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_107_687">
+                                        <rect width="18" height="20" fill="white"
+                                            transform="translate(0.918457 0.878845)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="dashboard-view__no">
+                            <span>15</span>
+                            <div class="progress-wrapper">
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 25%"></div>
+                                </div>
+                                <div class="progress-bar-no">25%</div>
+                            </div>
+                        </div>
+                        <p class="dashboard-view__text">Total</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dashboard-view__container">
+                <div class="dashboard-view__table-header">
+                    <div class="dashboard-view__tab">
+                        <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">
+                            Active Request
+                        </button>
+                        <button class="tablinks" onclick="openCity(event, 'Paris')">
+                            Closed Request
+                        </button>
+                    </div>
+                    <div class="dashboard-view__rt">
+                        <div class="dashboard-view__search">
+                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.4032 16.0678L12.7389 12.4034C13.8636 11.121 14.4841 9.49822 14.4841 7.77659C14.4841 5.89732 13.7522 4.13071 12.4234 2.80199C11.0947 1.47326 9.32811 0.741333 7.44883 0.741333C5.56956 0.741333 3.80296 1.47326 2.47423 2.80199C1.1455 4.13071 0.413574 5.89732 0.413574 7.77659C0.413574 9.65586 1.1455 11.4225 2.47423 12.7512C3.80296 14.0799 5.56956 14.8118 7.44883 14.8118C9.17046 14.8118 10.7932 14.1913 12.0757 13.0667L15.74 16.731C15.8316 16.8226 15.9516 16.8684 16.0716 16.8684C16.1916 16.8684 16.3116 16.8226 16.4032 16.731C16.5864 16.5478 16.5864 16.251 16.4032 16.0678ZM3.13745 12.088C1.98597 10.9363 1.35161 9.4051 1.35161 7.77659C1.35161 6.14808 1.98597 4.61691 3.13745 3.4652C4.28915 2.31373 5.82032 1.67937 7.44883 1.67937C9.07734 1.67937 10.6085 2.31373 11.7602 3.4652C12.9117 4.61691 13.5461 6.14808 13.5461 7.77659C13.5461 9.4051 12.9117 10.9363 11.7602 12.088C10.6085 13.2394 9.07734 13.8738 7.44883 13.8738C5.82032 13.8738 4.28915 13.2394 3.13745 12.088Z"
+                                    fill="#7B7B7B" />
+                            </svg>
+                            <input type="text" placeholder="Search" />
+                        </div>
+                        <div class="dashboard-view__filter">
+                            <button class="dashboard-view__filter-btn">Show 15 Rows</button>
+                            <span>|</span>
+                            <button class="dashboard-view__filter-btn">
+                                Export Report
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="London" class="tabcontent">
+                    <table class="doh-table doh-table--follow-up">
+                        <tr>
+                            <td>
+                                <div class="doh-table-content">
+                                    <p class="doh-table-content__title">SR.No</p>
+                                    <div class="doh-table-content__text">DOH-GS-MV0004</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="doh-table-content">
+                                    <p class="doh-table-content__title">Category</p>
+                                    <div class="doh-table-content__text">General Services</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="doh-table-content">
+                                    <p class="doh-table-content__title">Service Name</p>
+                                    <div class="doh-table-content__text">
+                                        Material moving request service
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="doh-table-content">
+                                    <p class="doh-table-content__title">Status</p>
+                                    <div class="doh-table-content__text">
+                                        <span class="doh-tag" style="--tag-color: #198754">Completed</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="doh-table-content">
+                                    <p class="doh-table-content__title">Approver Comments</p>
+
+                                    <div class="doh-table-content__text line-clamb hover">
+                                        Review the presentation and give an opinion
+
+                                        <div class="hover-full">
+                                            Review the presentation and give an opinion
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="doh-table-content">
+                                    <p class="doh-table-content__title">Intiated Date</p>
+                                    <div class="doh-table-content__text">11/11/2022</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="doh-table-content">
+                                    <p class="doh-table-content__title">Completed Date</p>
+                                    <div class="doh-table-content__text">11/11/2023</div>
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="doh-table-arrow-btns">
+                                    <a href="#" class="doh-table-arrow-btn">
+                                        <svg width="9" height="14" viewBox="0 0 9 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M5.23369 7.20451L0.283691 2.25452L1.69769 0.840515L8.06169 7.20451L1.69769 13.5685L0.283691 12.1545L5.23369 7.20451Z"
+                                                fill="#014F67" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="doh-table-content">
+                                    <p class="doh-table-content__title">SR.No</p>
+                                    <div class="doh-table-content__text">DOH-GS-MV0004</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="doh-table-content">
+                                    <p class="doh-table-content__title">Category</p>
+                                    <div class="doh-table-content__text">General Services</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="doh-table-content">
+                                    <p class="doh-table-content__title">Service Name</p>
+                                    <div class="doh-table-content__text">
+                                        Material moving request service
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="doh-table-content">
+                                    <p class="doh-table-content__title">Status</p>
+                                    <div class="doh-table-content__text">
+                                        <span class="doh-tag" style="--tag-color: #fba627">Completed</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="doh-table-content">
+                                    <p class="doh-table-content__title">Approver Comments</p>
+
+                                    <div class="doh-table-content__text line-clamb hover">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, quasi necessitatibus temporibus saepe doloribus incidunt?
+
+                                        <div class="hover-full">
+                                            Review the presentation and give an opinion
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="doh-table-content">
+                                    <p class="doh-table-content__title">Intiated Date</p>
+                                    <div class="doh-table-content__text">11/11/2022</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="doh-table-content">
+                                    <p class="doh-table-content__title">Completed Date</p>
+                                    <div class="doh-table-content__text">11/11/2023</div>
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="doh-table-arrow-btns">
+                                    <a href="#" class="doh-table-arrow-btn">
+                                        <svg width="9" height="14" viewBox="0 0 9 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M5.23369 7.20451L0.283691 2.25452L1.69769 0.840515L8.06169 7.20451L1.69769 13.5685L0.283691 12.1545L5.23369 7.20451Z"
+                                                fill="#014F67" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="doh-table-content">
+                                    <p class="doh-table-content__title">SR.No</p>
+                                    <div class="doh-table-content__text">DOH-GS-MV0004</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="doh-table-content">
+                                    <p class="doh-table-content__title">Category</p>
+                                    <div class="doh-table-content__text">General Services</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="doh-table-content">
+                                    <p class="doh-table-content__title">Service Name</p>
+                                    <div class="doh-table-content__text">
+                                        Material moving request service
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="doh-table-content">
+                                    <p class="doh-table-content__title">Status</p>
+                                    <div class="doh-table-content__text">
+                                        <span class="doh-tag" style="--tag-color: #f13153">Completed</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="doh-table-content">
+                                    <p class="doh-table-content__title">Approver Comments</p>
+
+                                    <div class="doh-table-content__text line-clamb hover">
+                                        Review the presentation and give an opinion
+
+                                        <div class="hover-full">
+                                            Review the presentation and give an opinion
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="doh-table-content">
+                                    <p class="doh-table-content__title">Intiated Date</p>
+                                    <div class="doh-table-content__text">11/11/2022</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="doh-table-content">
+                                    <p class="doh-table-content__title">Completed Date</p>
+                                    <div class="doh-table-content__text">11/11/2023</div>
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="doh-table-arrow-btns">
+                                    <a href="#" class="doh-table-arrow-btn">
+                                        <svg width="9" height="14" viewBox="0 0 9 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M5.23369 7.20451L0.283691 2.25452L1.69769 0.840515L8.06169 7.20451L1.69769 13.5685L0.283691 12.1545L5.23369 7.20451Z"
+                                                fill="#014F67" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="doh-table-content">
+                                    <p class="doh-table-content__title">SR.No</p>
+                                    <div class="doh-table-content__text">DOH-GS-MV0004</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="doh-table-content">
+                                    <p class="doh-table-content__title">Category</p>
+                                    <div class="doh-table-content__text">General Services</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="doh-table-content">
+                                    <p class="doh-table-content__title">Service Name</p>
+                                    <div class="doh-table-content__text">
+                                        Material moving request service
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="doh-table-content">
+                                    <p class="doh-table-content__title">Status</p>
+                                    <div class="doh-table-content__text">
+                                        <span class="doh-tag" style="--tag-color: #198754">Completed</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="doh-table-content">
+                                    <p class="doh-table-content__title">Approver Comments</p>
+
+                                    <div class="doh-table-content__text line-clamb hover">
+                                        Review the presentation and give an opinion
+
+                                        <div class="hover-full">
+                                            Review the presentation and give an opinion
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="doh-table-content">
+                                    <p class="doh-table-content__title">Intiated Date</p>
+                                    <div class="doh-table-content__text">11/11/2022</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="doh-table-content">
+                                    <p class="doh-table-content__title">Completed Date</p>
+                                    <div class="doh-table-content__text">11/11/2023</div>
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="doh-table-arrow-btns">
+                                    <a href="#" class="doh-table-arrow-btn">
+                                        <svg width="9" height="14" viewBox="0 0 9 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M5.23369 7.20451L0.283691 2.25452L1.69769 0.840515L8.06169 7.20451L1.69769 13.5685L0.283691 12.1545L5.23369 7.20451Z"
+                                                fill="#014F67" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div id="Paris" class="tabcontent">
+                    <table class="doh-table doh-table--follow-up">
+                        <tr>
+                            <td>
+                                <div class="doh-table-content">
+                                    <p class="doh-table-content__title">SR.No</p>
+                                    <div class="doh-table-content__text">DOH-GS-MV0004</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="doh-table-content">
+                                    <p class="doh-table-content__title">Category</p>
+                                    <div class="doh-table-content__text">General Services</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="doh-table-content">
+                                    <p class="doh-table-content__title">Service Name</p>
+                                    <div class="doh-table-content__text">
+                                        Material moving request service
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="doh-table-content">
+                                    <p class="doh-table-content__title">Status</p>
+                                    <div class="doh-table-content__text">
+                                        <span class="doh-tag" style="--tag-color: #198754">Completed</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="doh-table-content">
+                                    <p class="doh-table-content__title">Approver Comments</p>
+
+                                    <div class="doh-table-content__text line-clamb hover">
+                                        Review the presentation and give an opinion
+
+                                        <div class="hover-full">
+                                            Review the presentation and give an opinion
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="doh-table-content">
+                                    <p class="doh-table-content__title">Intiated Date</p>
+                                    <div class="doh-table-content__text">11/11/2022</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="doh-table-content">
+                                    <p class="doh-table-content__title">Completed Date</p>
+                                    <div class="doh-table-content__text">11/11/2023</div>
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="doh-table-arrow-btns">
+                                    <a href="#" class="doh-table-arrow-btn">
+                                        <svg width="9" height="14" viewBox="0 0 9 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M5.23369 7.20451L0.283691 2.25452L1.69769 0.840515L8.06169 7.20451L1.69769 13.5685L0.283691 12.1545L5.23369 7.20451Z"
+                                                fill="#014F67" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="doh-table-content">
+                                    <p class="doh-table-content__title">SR.No</p>
+                                    <div class="doh-table-content__text">DOH-GS-MV0004</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="doh-table-content">
+                                    <p class="doh-table-content__title">Category</p>
+                                    <div class="doh-table-content__text">General Services</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="doh-table-content">
+                                    <p class="doh-table-content__title">Service Name</p>
+                                    <div class="doh-table-content__text">
+                                        Material moving request service
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="doh-table-content">
+                                    <p class="doh-table-content__title">Status</p>
+                                    <div class="doh-table-content__text">
+                                        <span class="doh-tag" style="--tag-color: #fba627">Completed</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="doh-table-content">
+                                    <p class="doh-table-content__title">Approver Comments</p>
+
+                                    <div class="doh-table-content__text line-clamb hover">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, quasi necessitatibus temporibus saepe doloribus incidunt?
+
+                                        <div class="hover-full">
+                                            Review the presentation and give an opinion
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="doh-table-content">
+                                    <p class="doh-table-content__title">Intiated Date</p>
+                                    <div class="doh-table-content__text">11/11/2022</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="doh-table-content">
+                                    <p class="doh-table-content__title">Completed Date</p>
+                                    <div class="doh-table-content__text">11/11/2023</div>
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="doh-table-arrow-btns">
+                                    <a href="#" class="doh-table-arrow-btn">
+                                        <svg width="9" height="14" viewBox="0 0 9 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M5.23369 7.20451L0.283691 2.25452L1.69769 0.840515L8.06169 7.20451L1.69769 13.5685L0.283691 12.1545L5.23369 7.20451Z"
+                                                fill="#014F67" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <div class="doh-table-content">
+                                    <p class="doh-table-content__title">SR.No</p>
+                                    <div class="doh-table-content__text">DOH-GS-MV0004</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="doh-table-content">
+                                    <p class="doh-table-content__title">Category</p>
+                                    <div class="doh-table-content__text">General Services</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="doh-table-content">
+                                    <p class="doh-table-content__title">Service Name</p>
+                                    <div class="doh-table-content__text">
+                                        Material moving request service
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="doh-table-content">
+                                    <p class="doh-table-content__title">Status</p>
+                                    <div class="doh-table-content__text">
+                                        <span class="doh-tag" style="--tag-color: #f13153">Completed</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="doh-table-content">
+                                    <p class="doh-table-content__title">Approver Comments</p>
+
+                                    <div class="doh-table-content__text line-clamb hover">
+                                        Review the presentation and give an opinion
+
+                                        <div class="hover-full">
+                                            Review the presentation and give an opinion
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="doh-table-content">
+                                    <p class="doh-table-content__title">Intiated Date</p>
+                                    <div class="doh-table-content__text">11/11/2022</div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="doh-table-content">
+                                    <p class="doh-table-content__title">Completed Date</p>
+                                    <div class="doh-table-content__text">11/11/2023</div>
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="doh-table-arrow-btns">
+                                    <a href="#" class="doh-table-arrow-btn">
+                                        <svg width="9" height="14" viewBox="0 0 9 14" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M5.23369 7.20451L0.283691 2.25452L1.69769 0.840515L8.06169 7.20451L1.69769 13.5685L0.283691 12.1545L5.23369 7.20451Z"
+                                                fill="#014F67" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+                      
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="" style="
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        ">
+            <ul>
+                <li><a href="#" title="Privacy Policy">Privacy Policy</a></li>
+                <li>|</li>
+                <li><a href="#" title="Privacy Policy">Terms & Conditions</a></li>
+            </ul>
+            <p>© 2022 Copyrights DoH. All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!--  -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="content-wrapper">
+            <a href="#" title="DoH-logo">
+                <img src="Images/DoH-logo.svg" alt="DoH-logo" />
+            </a>
+            <div class="d-flex gap-3 align-items-center">
+                <a href="#" class="my-services" style="color: #555">My Services</a>
+                <span>|</span>
+                <p style="color: #014f67; font-weight: 500">Hi Member</p>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content-wrapper tabs">
+        <div class="tab">
+            <h2>Services</h2>
+            <button class="tablinks" onclick="openCity(event, 'one')" id="defaultOpen">
+                <img src="Images/tab-icon-1.png" alt="" /> HR Services
+            </button>
+            <button class="tablinks" onclick="openCity(event, 'two')">
+                <img src="Images/tab-icon-2.png" alt="" />IT Services
+            </button>
+            <button class="tablinks" onclick="openCity(event, 'three')">
+                <img src="Images/tab-icon-3.png" alt="" />Procurment Services
+            </button>
+            <button class="tablinks" onclick="openCity(event, 'four')">
+                <img src="Images/tab-icon-4.png" alt="" />General Services
+            </button>
+        </div>
+        <div class="tab__contentents">
+            <div id="one" class="tab__content">
+                <div class="tab__inside-header">
+                    <h2>My Services</h2>
+                </div>
+
+                <div class="w-100">
+                    <div class="col">
+                        <table class="doh-table doh-table--follow-up">
+                            <tr>
+                                <td>
+                                    <div class="doh-table-content">
+                                        <p class="doh-table-content__title">Service</p>
+                                        <div class="doh-table-content__text">HR Service</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="doh-table-content">
+                                        <p class="doh-table-content__title">Service Name</p>
+                                        <!-- <div class="doh-table-content__text-comment line-clamb-2 hover">
+                                            Review the presentation and give an opinion
+                                            <div class="hover-full">
+                                                Complete all doh plans strategic and operational and
+                                                reflect them on system
+                                            </div>
+                                        </div> -->
+                                        <div class="doh-table-content__text line-clamb hover">
+                                            Submit an application for housing benefits new or renewal
+
+                                            <!-- <div class="hover-full">
+                                                Complete all doh plans strategic and operational and
+                                                reflect them on system Complete all doh plans
+                                                strategic and operational and reflect them on system
+                                                Complete all doh plans strategic and operational and
+                                                reflect them on system
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="doh-table-content">
+                                        <p class="doh-table-content__title">Status</p>
+                                        <div class="doh-table-content__text">
+                                            <span class="doh-tag" style="--tag-color: var(--green)">Completed</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="doh-table-content">
+                                        <p class="doh-table-content__title">Notes</p>
+                                        <div class="doh-table-content__text line-clamb">
+                                            The strategic plan is not specified
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="doh-table-content">
+                                        <p class="doh-table-content__title">Apply Date</p>
+                                        <div class="doh-table-content__text">11/11/2022</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="doh-table-content">
+                                        <p class="doh-table-content__title">Completed Date</p>
+                                        <div class="doh-table-content__text">11/11/2023</div>
+                                    </div>
+                                </td>
+                                
+                                <td>
+                                    <button class="doh-table-arrow-btn" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        <svg width="8" height="13" viewBox="0 0 8 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M4.95 6.364L0 1.414L1.414 0L7.778 6.364L1.414 12.728L0 11.314L4.95 6.364Z"
+                                                fill="#014F67" />
+                                        </svg>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="doh-table-content">
+                                        <p class="doh-table-content__title">Service</p>
+                                        <div class="doh-table-content__text">HR Service</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="doh-table-content">
+                                        <p class="doh-table-content__title">Service Name</p>
+                                        <!-- <div class="doh-table-content__text-comment line-clamb-2 hover">
+                                            Review the presentation and give an opinion
+                                            <div class="hover-full">
+                                                Complete all doh plans strategic and operational and
+                                                reflect them on system
+                                            </div>
+                                        </div> -->
+                                        <div class="doh-table-content__text line-clamb hover">
+                                            Submit an application for housing benefits new or renewal
+
+                                            <!-- <div class="hover-full">
+                                                Complete all doh plans strategic and operational and
+                                                reflect them on system Complete all doh plans
+                                                strategic and operational and reflect them on system
+                                                Complete all doh plans strategic and operational and
+                                                reflect them on system
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="doh-table-content">
+                                        <p class="doh-table-content__title">Status</p>
+                                        <div class="doh-table-content__text">
+                                            <span class="doh-tag" style="--tag-color: var(--orange)">Pending</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="doh-table-content">
+                                        <p class="doh-table-content__title">Notes</p>
+                                        <div class="doh-table-content__text line-clamb">
+                                            The strategic plan is not specified
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="doh-table-content">
+                                        <p class="doh-table-content__title">Apply Date</p>
+                                        <div class="doh-table-content__text">11/11/2022</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="doh-table-content">
+                                        <p class="doh-table-content__title">Completed Date</p>
+                                        <div class="doh-table-content__text">11/11/2023</div>
+                                    </div>
+                                </td>
+                                
+                                <td>
+                                    <button class="doh-table-arrow-btn" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        <svg width="8" height="13" viewBox="0 0 8 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M4.95 6.364L0 1.414L1.414 0L7.778 6.364L1.414 12.728L0 11.314L4.95 6.364Z"
+                                                fill="#014F67" />
+                                        </svg>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="doh-table-content">
+                                        <p class="doh-table-content__title">Service</p>
+                                        <div class="doh-table-content__text">HR Service</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="doh-table-content">
+                                        <p class="doh-table-content__title">Service Name</p>
+                                        <!-- <div class="doh-table-content__text-comment line-clamb-2 hover">
+                                            Review the presentation and give an opinion
+                                            <div class="hover-full">
+                                                Complete all doh plans strategic and operational and
+                                                reflect them on system
+                                            </div>
+                                        </div> -->
+                                        <div class="doh-table-content__text line-clamb hover">
+                                            Submit an application for housing benefits new or renewal
+
+                                            <!-- <div class="hover-full">
+                                                Complete all doh plans strategic and operational and
+                                                reflect them on system Complete all doh plans
+                                                strategic and operational and reflect them on system
+                                                Complete all doh plans strategic and operational and
+                                                reflect them on system
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="doh-table-content">
+                                        <p class="doh-table-content__title">Status</p>
+                                        <div class="doh-table-content__text">
+                                            <span class="doh-tag" style="--tag-color: var(--red)">In Progress</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="doh-table-content">
+                                        <p class="doh-table-content__title">Notes</p>
+                                        <div class="doh-table-content__text line-clamb">
+                                            The strategic plan is not specified
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="doh-table-content">
+                                        <p class="doh-table-content__title">Apply Date</p>
+                                        <div class="doh-table-content__text">11/11/2022</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="doh-table-content">
+                                        <p class="doh-table-content__title">Completed Date</p>
+                                        <div class="doh-table-content__text">11/11/2023</div>
+                                    </div>
+                                </td>
+                                
+                                <td>
+                                    <button class="doh-table-arrow-btn" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        <svg width="8" height="13" viewBox="0 0 8 13" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M4.95 6.364L0 1.414L1.414 0L7.778 6.364L1.414 12.728L0 11.314L4.95 6.364Z"
+                                                fill="#014F67" />
+                                        </svg>
+                                    </button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="content-wrapper">
+            <ul>
+                <li><a href="#" title="Privacy Policy">Privacy Policy</a></li>
+                <li>|</li>
+                <li><a href="#" title="Privacy Policy">Terms & Conditions</a></li>
+            </ul>
+            <p>© 2022 Copyrights DoH. All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- DETAILS Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header flex-wrap">
+                    <h2 class="doh-h2">
+                        Development of Royal Suites at Sheikh Khalifa Medical Hospital
+                    </h2>
+                    <p class="mt-2 font-14">
+                        Complete all doh plans strategic and operational and reflect them
+                        on system
+                    </p>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="col d-flex doh-modal-boxes">
+                        <div class="doh-modal-tile">
+                            <p class="doh-modal-tile__head">Sector</p>
+                            <ul>
+                                <li>
+                                    <span class="doh-tag" style="--tag-color: var(--red)">Under Approval</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="doh-modal-tile">
+                            <p class="doh-modal-tile__head">Owner</p>
+                            <ul>
+                                <li><img src="images/image.png" alt="" /></li>
+                                <li>Fatima Saeed Al-Ghafri</li>
+                            </ul>
+                        </div>
+                        <div class="doh-modal-tile">
+                            <p class="doh-modal-tile__head">Source</p>
+                            <ul>
+                                <li>ER-2022-1234</li>
+                            </ul>
+                        </div>
+
+                        <div class="doh-modal-tile">
+                            <p class="doh-modal-tile__head">Start Date</p>
+                            <ul>
+                                <li>
+                                    <svg width="16" height="18" viewBox="0 0 16 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M5.49419 0C5.83134 0 6.10465 0.273315 6.10465 0.610465V1.63654C6.64938 1.62791 7.25463 1.62791 7.92705 1.62791H7.94505C8.61746 1.62791 9.22272 1.62791 9.76744 1.63654V0.610465C9.76744 0.273315 10.0408 0 10.3779 0C10.7151 0 10.9884 0.273315 10.9884 0.610465V1.67966C12.219 1.75681 13.1644 1.95621 13.9428 2.52175C14.3402 2.81043 14.6896 3.15984 14.9782 3.55717C15.4551 4.21348 15.6686 4.98216 15.7714 5.93085C15.8721 6.86049 15.8721 8.03226 15.8721 9.5271V9.57328C15.8721 10.5174 15.8721 11.3291 15.8482 12.0267C15.7959 13.5516 15.6309 14.6724 14.9782 15.5707C14.6896 15.9681 14.3402 16.3175 13.9428 16.6062C13.0445 17.2588 11.9237 17.4238 10.3988 17.4761C9.70103 17.5 8.88916 17.5 7.94483 17.5H7.8992C6.40435 17.5 5.23259 17.5 4.30295 17.3993C3.35425 17.2965 2.58557 17.083 1.92926 16.6062C1.53193 16.3175 1.18252 15.9681 0.893845 15.5707C0.417008 14.9144 0.203493 14.1457 0.100709 13.1971C-1.19227e-05 12.2674 -6.63358e-06 11.0956 1.10066e-07 9.60078V9.52712C-6.63358e-06 8.03227 -1.19227e-05 6.8605 0.100709 5.93085C0.203493 4.98216 0.417008 4.21348 0.893845 3.55717C1.18252 3.15984 1.53193 2.81043 1.92926 2.52175C2.70766 1.95621 3.65309 1.75681 4.88372 1.67966V0.610465C4.88372 0.273315 5.15704 0 5.49419 0ZM4.88372 2.90358C3.77507 2.97982 3.13517 3.15476 2.64691 3.50951C2.35323 3.72287 2.09497 3.98114 1.8816 4.27481C1.58118 4.6883 1.40607 5.21755 1.31454 6.06236C1.22177 6.9186 1.22093 8.0243 1.22093 9.56395C1.22093 11.1036 1.22177 12.2093 1.31454 13.0655C1.40607 13.9104 1.58118 14.4396 1.8816 14.8531C2.09497 15.1468 2.35323 15.405 2.64691 15.6184C3.0604 15.9188 3.58964 16.0939 4.43446 16.1855C5.29069 16.2782 6.39639 16.2791 7.93605 16.2791C8.62656 16.2791 9.23168 16.279 9.76893 16.2703C9.77248 15.8839 9.78451 15.5995 9.82506 15.3434C10.1423 13.3408 11.7129 11.7702 13.7155 11.453C13.9716 11.4124 14.256 11.4004 14.6424 11.3968C14.6511 10.8596 14.6512 10.2545 14.6512 9.56395C14.6512 8.0243 14.6503 6.9186 14.5576 6.06236C14.466 5.21755 14.2909 4.6883 13.9905 4.27481C13.7771 3.98114 13.5189 3.72287 13.2252 3.50951C12.7369 3.15476 12.097 2.97982 10.9884 2.90358V3.05233C10.9884 3.38948 10.7151 3.66279 10.3779 3.66279C10.0408 3.66279 9.76744 3.38948 9.76744 3.05233V2.85762C9.23057 2.84888 8.62593 2.84884 7.93605 2.84884C7.24617 2.84884 6.64152 2.84888 6.10465 2.85762V3.05233C6.10465 3.38948 5.83134 3.66279 5.49419 3.66279C5.15704 3.66279 4.88372 3.38948 4.88372 3.05233V2.90358ZM14.5963 12.6185C14.2667 12.6224 14.0734 12.6324 13.9065 12.6589C12.4263 12.8933 11.2654 14.0542 11.031 15.5344C11.0045 15.7013 10.9944 15.8946 10.9906 16.2242C12.0979 16.1478 12.7373 15.9729 13.2252 15.6184C13.5189 15.405 13.7771 15.1468 13.9905 14.8531C14.345 14.3652 14.5199 13.7258 14.5963 12.6185Z"
+                                            fill="#3D3D3D" />
+                                        <path
+                                            d="M4.68028 6.30809C4.68028 6.75763 4.31586 7.12205 3.86632 7.12205C3.41679 7.12205 3.05237 6.75763 3.05237 6.30809C3.05237 5.85856 3.41679 5.49414 3.86632 5.49414C4.31586 5.49414 4.68028 5.85856 4.68028 6.30809Z"
+                                            fill="#3D3D3D" />
+                                        <path
+                                            d="M4.68028 9.56391C4.68028 10.0134 4.31586 10.3779 3.86632 10.3779C3.41679 10.3779 3.05237 10.0134 3.05237 9.56391C3.05237 9.11437 3.41679 8.74995 3.86632 8.74995C4.31586 8.74995 4.68028 9.11437 4.68028 9.56391Z"
+                                            fill="#3D3D3D" />
+                                        <path
+                                            d="M8.75004 6.30809C8.75004 6.75763 8.38562 7.12205 7.93609 7.12205C7.48656 7.12205 7.12214 6.75763 7.12214 6.30809C7.12214 5.85856 7.48656 5.49414 7.93609 5.49414C8.38562 5.49414 8.75004 5.85856 8.75004 6.30809Z"
+                                            fill="#3D3D3D" />
+                                        <path
+                                            d="M8.75004 9.56391C8.75004 10.0134 8.38562 10.3779 7.93609 10.3779C7.48656 10.3779 7.12214 10.0134 7.12214 9.56391C7.12214 9.11437 7.48656 8.74995 7.93609 8.74995C8.38562 8.74995 8.75004 9.11437 8.75004 9.56391Z"
+                                            fill="#3D3D3D" />
+                                        <path
+                                            d="M8.75004 12.8197C8.75004 13.2693 8.38562 13.6337 7.93609 13.6337C7.48656 13.6337 7.12214 13.2693 7.12214 12.8197C7.12214 12.3702 7.48656 12.0058 7.93609 12.0058C8.38562 12.0058 8.75004 12.3702 8.75004 12.8197Z"
+                                            fill="#3D3D3D" />
+                                        <path
+                                            d="M12.8198 6.30809C12.8198 6.75763 12.4554 7.12205 12.0059 7.12205C11.5563 7.12205 11.1919 6.75763 11.1919 6.30809C11.1919 5.85856 11.5563 5.49414 12.0059 5.49414C12.4554 5.49414 12.8198 5.85856 12.8198 6.30809Z"
+                                            fill="#3D3D3D" />
+                                        <path
+                                            d="M12.8198 9.56391C12.8198 10.0134 12.4554 10.3779 12.0059 10.3779C11.5563 10.3779 11.1919 10.0134 11.1919 9.56391C11.1919 9.11437 11.5563 8.74995 12.0059 8.74995C12.4554 8.74995 12.8198 9.11437 12.8198 9.56391Z"
+                                            fill="#3D3D3D" />
+                                        <path
+                                            d="M4.68028 12.8197C4.68028 13.2693 4.31586 13.6337 3.86632 13.6337C3.41679 13.6337 3.05237 13.2693 3.05237 12.8197C3.05237 12.3702 3.41679 12.0058 3.86632 12.0058C4.31586 12.0058 4.68028 12.3702 4.68028 12.8197Z"
+                                            fill="#3D3D3D" />
+                                    </svg>
+                                </li>
+                                <li>12-12-2022</li>
+                            </ul>
+                        </div>
+
+                        <div class="doh-modal-tile">
+                            <p class="doh-modal-tile__head">End Date</p>
+                            <ul>
+                                <li>
+                                    <svg width="16" height="18" viewBox="0 0 16 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M5.49419 0C5.83134 0 6.10465 0.273315 6.10465 0.610465V1.63654C6.64938 1.62791 7.25463 1.62791 7.92705 1.62791H7.94505C8.61746 1.62791 9.22272 1.62791 9.76744 1.63654V0.610465C9.76744 0.273315 10.0408 0 10.3779 0C10.7151 0 10.9884 0.273315 10.9884 0.610465V1.67966C12.219 1.75681 13.1644 1.95621 13.9428 2.52175C14.3402 2.81043 14.6896 3.15984 14.9782 3.55717C15.4551 4.21348 15.6686 4.98216 15.7714 5.93085C15.8721 6.86049 15.8721 8.03226 15.8721 9.5271V9.57328C15.8721 10.5174 15.8721 11.3291 15.8482 12.0267C15.7959 13.5516 15.6309 14.6724 14.9782 15.5707C14.6896 15.9681 14.3402 16.3175 13.9428 16.6062C13.0445 17.2588 11.9237 17.4238 10.3988 17.4761C9.70103 17.5 8.88916 17.5 7.94483 17.5H7.8992C6.40435 17.5 5.23259 17.5 4.30295 17.3993C3.35425 17.2965 2.58557 17.083 1.92926 16.6062C1.53193 16.3175 1.18252 15.9681 0.893845 15.5707C0.417008 14.9144 0.203493 14.1457 0.100709 13.1971C-1.19227e-05 12.2674 -6.63358e-06 11.0956 1.10066e-07 9.60078V9.52712C-6.63358e-06 8.03227 -1.19227e-05 6.8605 0.100709 5.93085C0.203493 4.98216 0.417008 4.21348 0.893845 3.55717C1.18252 3.15984 1.53193 2.81043 1.92926 2.52175C2.70766 1.95621 3.65309 1.75681 4.88372 1.67966V0.610465C4.88372 0.273315 5.15704 0 5.49419 0ZM4.88372 2.90358C3.77507 2.97982 3.13517 3.15476 2.64691 3.50951C2.35323 3.72287 2.09497 3.98114 1.8816 4.27481C1.58118 4.6883 1.40607 5.21755 1.31454 6.06236C1.22177 6.9186 1.22093 8.0243 1.22093 9.56395C1.22093 11.1036 1.22177 12.2093 1.31454 13.0655C1.40607 13.9104 1.58118 14.4396 1.8816 14.8531C2.09497 15.1468 2.35323 15.405 2.64691 15.6184C3.0604 15.9188 3.58964 16.0939 4.43446 16.1855C5.29069 16.2782 6.39639 16.2791 7.93605 16.2791C8.62656 16.2791 9.23168 16.279 9.76893 16.2703C9.77248 15.8839 9.78451 15.5995 9.82506 15.3434C10.1423 13.3408 11.7129 11.7702 13.7155 11.453C13.9716 11.4124 14.256 11.4004 14.6424 11.3968C14.6511 10.8596 14.6512 10.2545 14.6512 9.56395C14.6512 8.0243 14.6503 6.9186 14.5576 6.06236C14.466 5.21755 14.2909 4.6883 13.9905 4.27481C13.7771 3.98114 13.5189 3.72287 13.2252 3.50951C12.7369 3.15476 12.097 2.97982 10.9884 2.90358V3.05233C10.9884 3.38948 10.7151 3.66279 10.3779 3.66279C10.0408 3.66279 9.76744 3.38948 9.76744 3.05233V2.85762C9.23057 2.84888 8.62593 2.84884 7.93605 2.84884C7.24617 2.84884 6.64152 2.84888 6.10465 2.85762V3.05233C6.10465 3.38948 5.83134 3.66279 5.49419 3.66279C5.15704 3.66279 4.88372 3.38948 4.88372 3.05233V2.90358ZM14.5963 12.6185C14.2667 12.6224 14.0734 12.6324 13.9065 12.6589C12.4263 12.8933 11.2654 14.0542 11.031 15.5344C11.0045 15.7013 10.9944 15.8946 10.9906 16.2242C12.0979 16.1478 12.7373 15.9729 13.2252 15.6184C13.5189 15.405 13.7771 15.1468 13.9905 14.8531C14.345 14.3652 14.5199 13.7258 14.5963 12.6185Z"
+                                            fill="#3D3D3D" />
+                                        <path
+                                            d="M4.68028 6.30809C4.68028 6.75763 4.31586 7.12205 3.86632 7.12205C3.41679 7.12205 3.05237 6.75763 3.05237 6.30809C3.05237 5.85856 3.41679 5.49414 3.86632 5.49414C4.31586 5.49414 4.68028 5.85856 4.68028 6.30809Z"
+                                            fill="#3D3D3D" />
+                                        <path
+                                            d="M4.68028 9.56391C4.68028 10.0134 4.31586 10.3779 3.86632 10.3779C3.41679 10.3779 3.05237 10.0134 3.05237 9.56391C3.05237 9.11437 3.41679 8.74995 3.86632 8.74995C4.31586 8.74995 4.68028 9.11437 4.68028 9.56391Z"
+                                            fill="#3D3D3D" />
+                                        <path
+                                            d="M8.75004 6.30809C8.75004 6.75763 8.38562 7.12205 7.93609 7.12205C7.48656 7.12205 7.12214 6.75763 7.12214 6.30809C7.12214 5.85856 7.48656 5.49414 7.93609 5.49414C8.38562 5.49414 8.75004 5.85856 8.75004 6.30809Z"
+                                            fill="#3D3D3D" />
+                                        <path
+                                            d="M8.75004 9.56391C8.75004 10.0134 8.38562 10.3779 7.93609 10.3779C7.48656 10.3779 7.12214 10.0134 7.12214 9.56391C7.12214 9.11437 7.48656 8.74995 7.93609 8.74995C8.38562 8.74995 8.75004 9.11437 8.75004 9.56391Z"
+                                            fill="#3D3D3D" />
+                                        <path
+                                            d="M8.75004 12.8197C8.75004 13.2693 8.38562 13.6337 7.93609 13.6337C7.48656 13.6337 7.12214 13.2693 7.12214 12.8197C7.12214 12.3702 7.48656 12.0058 7.93609 12.0058C8.38562 12.0058 8.75004 12.3702 8.75004 12.8197Z"
+                                            fill="#3D3D3D" />
+                                        <path
+                                            d="M12.8198 6.30809C12.8198 6.75763 12.4554 7.12205 12.0059 7.12205C11.5563 7.12205 11.1919 6.75763 11.1919 6.30809C11.1919 5.85856 11.5563 5.49414 12.0059 5.49414C12.4554 5.49414 12.8198 5.85856 12.8198 6.30809Z"
+                                            fill="#3D3D3D" />
+                                        <path
+                                            d="M12.8198 9.56391C12.8198 10.0134 12.4554 10.3779 12.0059 10.3779C11.5563 10.3779 11.1919 10.0134 11.1919 9.56391C11.1919 9.11437 11.5563 8.74995 12.0059 8.74995C12.4554 8.74995 12.8198 9.11437 12.8198 9.56391Z"
+                                            fill="#3D3D3D" />
+                                        <path
+                                            d="M4.68028 12.8197C4.68028 13.2693 4.31586 13.6337 3.86632 13.6337C3.41679 13.6337 3.05237 13.2693 3.05237 12.8197C3.05237 12.3702 3.41679 12.0058 3.86632 12.0058C4.31586 12.0058 4.68028 12.3702 4.68028 12.8197Z"
+                                            fill="#3D3D3D" />
+                                    </svg>
+                                </li>
+                                <li>12-12-2022</li>
+                            </ul>
+                        </div>
+
+                        <div class="doh-modal-tile">
+                            <p class="doh-modal-tile__head">Required</p>
+                            <ul>
+                                <li>Approval of the adoption of the budget</li>
+                            </ul>
+                        </div>
+
+                        <div class="doh-modal-tile">
+                            <p class="doh-modal-tile__head">Completion</p>
+                            <ul>
+                                <li>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 25%"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                            25%
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <ul class="d-flex gap-3 mt-4 mb-5">
+                        <li>
+                            <button class="primary-btn">
+                                <span> Save </span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="primary-btn" style="
+                    border: 2px solid #000;
+                    background: transparent;
+                    color: #000 !important;
+                  ">
+                                <span> Cancel </span>
+                            </button>
+                        </li>
+                    </ul>
+                    <h2 class="doh-h2 mb-3">Comments</h2>
+                    <div class="comments">
+                        <div class="comments-box d-flex">
+                            <div class="comments__user comments__user-big">
+                                <img src="images/image.png" alt="" />
+                            </div>
+                            <textarea class="comments__comment-text" name="" id="" cols="30" rows="10"
+                                placeholder="Comments"></textarea>
+                        </div>
+                        <button class="d-btn d-btn-add">ADD COMMENT</button>
+                        <div class="comments__upload">
+                            <input type="file" value="o" class="comments__file" />
+                        </div>
+
+                        <div class="comments__messages">
+                            <div class="comments__message-box mt-3">
+                                <div class="comments__inner">
+                                    <div class="comments__user comments__user-small">
+                                        <img src="images/image.png" alt="" />
+                                    </div>
+                                    <div class="comments__message">
+                                        <p class="comments__head">
+                                            <span>Kiran Raj</span>10 jan 2022
+                                        </p>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                            sed do eiusmod tempor incididunt ut labore et dolore
+                                            magna aliqua.
+                                        </p>
+                                        <button class="comments__reply">Reply</button>
+                                        <!-- reply -->
+                                        <div class="comments__reply-box mt-2">
+                                            <input type="text" class="comments__reply-input" />
+                                            <button class="d-btn d-btn-add ms-0 mt-sm-0 mt-2">
+                                                Add
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comments__message-box mt-3">
+                                <div class="comments__inner">
+                                    <div class="comments__user comments__user-small">
+                                        <img src="images/image.png" alt="" />
+                                    </div>
+                                    <div class="comments__message">
+                                        <p class="comments__head">
+                                            <span>Kiran Raj</span>10 jan 2022
+                                        </p>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                            sed do eiusmod tempor incididunt ut labore et dolore
+                                            magna aliqua.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="comments__inner">
+                                    <div class="comments__user comments__user-small">
+                                        <img src="images/image.png" alt="" />
+                                    </div>
+                                    <div class="comments__message">
+                                        <p class="comments__head">
+                                            <span>Kiran Raj</span>10 jan 2022
+                                        </p>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                            sed do eiusmod tempor incididunt ut labore et dolore
+                                            magna aliqua.
+                                        </p>
+                                    </div>
+                                    <div class="comments__inner">
+                                        <div class="comments__user comments__user-small">
+                                            <img src="images/image.png" alt="" />
+                                        </div>
+                                        <div class="comments__message">
+                                            <p class="comments__head">
+                                                <span>Kiran Raj</span>10 jan 2022
+                                            </p>
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                elit, sed do eiusmod tempor incididunt ut labore et
+                                                dolore magna aliqua.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab__content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+        document.getElementById("defaultOpen1").click();
+    </script>
+
+    <script>
+        if ($("div").hasClass("tab__contentents") === true) {
+            $("body").addClass("footer-padding");
+        }
+    </script>
+
+    <script>
+        $("#location").change(function () {
+            if ($(this).val() == "1") {
+                $(".inside").addClass("active");
+            } else {
+                $(".inside").removeClass("active");
+            }
+        });
+
+        $("#location").change(function () {
+            if ($(this).val() == "2") {
+                $(".outside").addClass("active");
+            } else {
+                $(".outside").removeClass("active");
+            }
+        });
+    </script>
+</body>
+
+</html>
